@@ -1,0 +1,39 @@
+{
+  "name": "basic-react-redux-kit",
+  "version": "1.0.0",
+  "description": "A slimmed down boilerplate for getting a react-redux app up and running.",
+  "main": "server.js",
+  "scripts": {
+    "webpack": "webpack --progress --colors -d",
+    "webpack:watch": "npm run webpack -- --watch",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prestart": "npm run webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.ncom/ackrasm/basic-react-redux-kit.git"
+  },
+  "author": "Nick Wyman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ackrasm/basic-react-redux-kit/issues"
+  },
+  "homepage": "https://github.com/ackrasm/basic-react-redux-kit#readme",
+  "devDependencies": {
+    "babel-core": "^6.18.2",
+    "babel-loader": "^6.2.7",
+    "babel-preset-react": "^6.16.0",
+    "css-loader": "^0.25.0",
+    "node-sass": "^3.12.5",
+    "sass-loader": "^4.0.2",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.3"
+  },
+  "dependencies": {
+    "express": "^4.14.0",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2",
+    "react-redux": "^4.4.6",
+    "redux": "^3.6.0"
+  }
+}
