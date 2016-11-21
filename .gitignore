@@ -5,5 +5,7 @@
 dist/
 !dist/index.html
 
+.tmp/
+
 node_modules/
 npm-debug.log

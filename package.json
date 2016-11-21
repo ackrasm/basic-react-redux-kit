@@ -6,7 +6,7 @@
   "scripts": {
     "webpack": "webpack --progress --colors -d",
     "webpack:watch": "npm run webpack -- --watch",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha-webpack --webpack-config webpack.test.config.js \"tests/**/*.spec.js\"",
     "prestart": "npm run webpack"
   },
   "repository": {
@@ -23,7 +23,10 @@
     "babel-core": "^6.18.2",
     "babel-loader": "^6.2.7",
     "babel-preset-react": "^6.16.0",
+    "chai": "^3.5.0",
     "css-loader": "^0.25.0",
+    "mocha": "^3.1.2",
+    "mocha-webpack": "^0.7.0",
     "node-sass": "^3.12.5",
     "sass-loader": "^4.0.2",
     "style-loader": "^0.13.1",
